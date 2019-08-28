@@ -1,0 +1,7 @@
+[user]
+	email = przemub@przemub.pl
+	name = Przemysław Buczkowski
+[core]
+	autocrlf = input
+[credential]
+	helper = cache
