@@ -12,7 +12,7 @@ depends=(
 	'pulseaudio' 'volumeicon' 'pavucontrol'
 	'firefox' 'thunderbird' 'firefox-i18n-en-gb' 'thunderbird-i18n-en-gb' 'pcmanfm' 'compton' 'dunst' 'libnotify'
 	'nitrogen' 'polkit-gnome' 'network-manager-applet' 'conky' 'xautolock' 'xfce4-terminal'
-	'bash-completion' 'cronie' 'evince' 'fcitx' 'fcitx-gtk2' 'fcitx-gtk3' 'fcitx-qt5' 'fcitx-mozc' 'vlc' 'lightdm' 'lxappearance' 'gvim'
+	'bash-completion' 'cronie' 'evince' 'fcitx' 'fcitx-gtk2' 'fcitx-gtk3' 'fcitx-qt5' 'fcitx-mozc' 'vlc' 'lightdm' 'lxappearance-gtk3' 'gvim'
 	'python-virtualenv' 'redshift' 'sudo' 'btrfs-progs' 'pkgfile' 'xorg-xrandr' 'xorg-xrdb' 'otf-ipafont'
 	)
 makedepends=()
