@@ -37,10 +37,7 @@ bindsym $mod+Shift+q kill
 #bindsym $mod+d exec --no-startup-id dmenu_run -b -nb "#222D31" -nf "#F9FAF9" -sb "#16A085" -sf "#F9FAF9" -fn "Noto-10.5"
 bindsym $mod+d exec --no-startup-id rofi -show run
 
-# launch categorized menu
-bindsym $mod+z exec --no-startup-id morc_menu
-
-exec --no-startup-id volumeicon
+exec --no-startup-id pasystray
 bindsym $mod+Ctrl+m exec pavucontrol
 
 # Start Applications
@@ -234,6 +231,9 @@ exec --no-startup-id conky -c /usr/share/conky/conky_maia
 exec --no-startup-id ckb-next -b
 exec --no-startup-id fcitx
 exec --no-startup-id sh -c "ssh-agent > ~/.ssh/agent.env"
+exec --no-startup-id kdeconnect-indicator
+exec --no-startup-id blueman-applet
+exec --no-startup-id touchegg
 # exec --no-startup-id xautolock -time 10 -locker i3lock
 exec_always --no-startup-id fix_xcursor
 
@@ -278,8 +278,8 @@ bar {
 #	tray_output primary
 #	tray_output eDP1
 
-   font xft:URWGothic-Book 11
-#font xft:Hermit medium 12
+   #font xft:URWGothic-Book 11
+   font xft:Hermit medium 11
 	strip_workspace_numbers yes
 
     colors {
@@ -373,4 +373,7 @@ bindsym $mod+F1 exec --no-startup-id /usr/local/bin/copy_paste /home/przemub/slo
 
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10%
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10%
+bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer -i 5
+bindsym XF86AudioLowerVolume exec --no-startup-id pamixer -d 5
+bindsym XF86AudioMute exec --no-startup-id pamixer -t
 

@@ -93,7 +93,6 @@ unset use_color safe_term match_lhs sh
 alias cp="cp -i"                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
-alias np='nano -w PKGBUILD'
 alias more=less
 
 xhost +local:root > /dev/null 2>&1
@@ -138,9 +137,9 @@ ex ()
   fi
 }
 
-# better yaourt colors
-export YAOURT_COLORS="nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1;41;5:votes=1;44:dsc=0:other=1;35"
+alias sa="ssh-add ~/.ssh/id_ed25519"
+alias dc="docker-compose"
 
-alias sa="ssh-add ~/.ssh/id_rsa"
-
+source /usr/share/doc/pkgfile/command-not-found.bash
+source ~/.ssh/agent.env > /dev/null
 
